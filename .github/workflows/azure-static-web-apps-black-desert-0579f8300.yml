@@ -3,7 +3,7 @@ name: Azure Static Web Apps CI/CD
 on:
   push:
     branches:
-      - main
+      - test
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
@@ -23,7 +23,7 @@ jobs:
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_BLACK_DESERT_0579F8300 }}
+          azure_static_web_apps_api_token: '4ba266b0bbca7f05dec4e9c4377cef64e06fee28233fec8d01ff2a156e65015f5-e1a02a88-c601-40e6-8515-179b50785e2d000226316'
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
