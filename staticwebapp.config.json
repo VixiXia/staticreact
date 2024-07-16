@@ -12,7 +12,7 @@
   },
    "routes": [
     {
-      "route": "/*",
+      "route": "/.auth/*",
       "allowedRoles": ["authenticated"]
     }
   ],
