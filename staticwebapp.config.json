@@ -21,11 +21,13 @@
             "allowedRoles": ["authenticated"],
             "rewrite": "/.auth/logout"
         },
-        {
-            "route": "/.auth/login/aad",
-            "allowedRoles": ["anonymous", "authenticated"],
-            "statusCode": 404
-        },
+    {
+      "route": "/.auth/*",
+      "allowedRoles": [
+        "anonymous",
+        "authenticated"
+      ]
+    },
     {
       "route": "/*",
       "allowedRoles": ["authenticated"]
