@@ -11,23 +11,6 @@
     }
   },
    "routes": [
-             {
-            "route": "/login",
-            "allowedRoles": ["anonymous"],
-            "rewrite": "/.auth/login/aad"
-        },
-        {
-            "route": "/logout",
-            "allowedRoles": ["authenticated"],
-            "rewrite": "/.auth/logout"
-        },
-    {
-      "route": "/.auth/*",
-      "allowedRoles": [
-        "anonymous",
-        "authenticated"
-      ]
-    },
     {
       "route": "/*",
       "allowedRoles": ["authenticated"]
