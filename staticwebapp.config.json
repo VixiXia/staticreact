@@ -7,7 +7,12 @@
           "openIdIssuer": "https://login.microsoftonline.com/ed3c1c81-f3be-495c-8028-f11b7ad6415a",
           "clientIdSettingName": "AZURE_CLIENT_ID",
           "clientSecretSettingName": "AZURE_CLIENT_SECRET_APP_SETTING_NAME"
-        }
+        },
+              "login": {
+                    "loginParameters": [
+                        "resource=https://graph.microsoft.com"
+                    ]
+                }
       }
     }
   },
