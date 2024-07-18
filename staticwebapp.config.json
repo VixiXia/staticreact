@@ -2,25 +2,15 @@
   "auth": {
     "identityProviders": {
       "azureActiveDirectory": {
-        "userDetailsClaim": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
         "registration": {
-          "openIdIssuer": "https://login.microsoftonline.com/ed3c1c81-f3be-495c-8028-f11b7ad6415a",
+          "openIdIssuer": "https://login.microsoftonline.com/ed3c1c81-f3be-495c-8028-f11b7ad6415a/v2.0",
           "clientIdSettingName": "AZURE_CLIENT_ID",
           "clientSecretSettingName": "AZURE_CLIENT_SECRET_APP_SETTING_NAME"
-        },
-              "login": {
-                    "loginParameters": [
-                        "resource=https://graph.microsoft.com"
-                    ]
-                }
+        }
       }
     }
   },
    "routes": [
-    {
-      "route":"/.auth/*",
-      "allowedRoles": ["anonymous"]
-    },
     {
       "route": "/*",
       "allowedRoles": ["authenticated"]
